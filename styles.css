@@ -1,0 +1,156 @@
+/* General Styling */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 350px;
+  width: 100%;
+}
+
+h1 {
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+p {
+  color: #666;
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+#question {
+  font-size: 1.5em;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Answer Input */
+#answer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#answer {
+  padding: 10px;
+  font-size: 1.2em;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 15px;
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+#answer:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+/* Keypad */
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.keypad button {
+  padding: 15px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #007BFF;
+  color: #fff;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.keypad button:hover {
+  background-color: #0056b3;
+}
+
+.keypad button:active {
+  transform: scale(0.95);
+}
+
+button {
+  padding: 8px 20px;
+  font-size: 1em;
+  margin-top: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #28a745;
+  color: #fff;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Result Display */
+#result {
+  margin-top: 15px;
+  font-size: 1.2em;
+  color: #28a745;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  .container {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  #question {
+    font-size: 1.4em;
+  }
+
+  #answer {
+    font-size: 1em;
+  }
+
+  .keypad button {
+    padding: 12px;
+    font-size: 1em;
+  }
+
+  button {
+    padding: 7px 15px;
+    font-size: 0.9em;
+  }
+
+  #result {
+    font-size: 1em;
+  }
+}

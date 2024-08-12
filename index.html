@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>素因数分解クイズゲーム</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>素因数分解</h1>
+    <p>以下の数を素因数分解してください:</p>
+    <div id="question"></div>
+    <div id="answer-container">
+      <input type="text" id="answer" placeholder="答えを入力" readonly>
+      <div class="keypad">
+        <button onclick="addToAnswer('1')">1</button>
+        <button onclick="addToAnswer('2')">2</button>
+        <button onclick="addToAnswer('3')">3</button>
+        <button onclick="addToAnswer('4')">4</button>
+        <button onclick="addToAnswer('5')">5</button>
+        <button onclick="addToAnswer('6')">6</button>
+        <button onclick="addToAnswer('7')">7</button>
+        <button onclick="addToAnswer('8')">8</button>
+        <button onclick="addToAnswer('9')">9</button>
+        <button onclick="addToAnswer('×')">×</button>
+        <button onclick="addToAnswer('0')">0</button>
+        <button onclick="deleteLast()">削除</button>
+      </div>
+    </div>
+    <div id="result"></div>
+    <button onclick="checkAnswer()">送信</button>
+    <button onclick="newQuestion()">新しい問題</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
