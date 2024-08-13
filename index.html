@@ -3,14 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>素因数分解クイズゲーム</title>
+  <title>素因数分解クイズゲーム | 楽しく学べる数学ゲーム</title>
+  <meta name="description" content="素因数分解を学べる楽しいクイズゲーム。遊びながら数学を強化しよう！">
+  <meta name="keywords" content="素因数分解, 数学クイズ, 教育ゲーム, 数学学習">
+  
+  <!-- Open Graph Meta Tags for Social Media Sharing -->
+  <meta property="og:title" content="素因数分解クイズゲーム">
+  <meta property="og:description" content="素因数分解を学べる楽しいクイズゲーム。遊びながら数学を強化しよう！">
+  <!--<meta property="og:image" content="https://your-site.com/image.jpg">  ここに適切な画像のURLを指定して -->
+  <meta property="og:url" content="https://as-rei.github.io/prime-factor-decomposition/">
+  <meta property="og:type" content="website">
+  
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>素因数分解</h1>
+    <h1>素因数分解クイズゲーム</h1>
     <p>以下の数を素因数分解してください:</p>
     <div id="question"></div>
+
     <div id="answer-container">
       <input type="text" id="answer" placeholder="答えを入力" readonly>
       <div class="keypad">
@@ -28,10 +39,13 @@
         <button onclick="deleteLast()">削除</button>
       </div>
     </div>
+    
     <div id="result"></div>
     <button onclick="checkAnswer()">送信</button>
     <button onclick="newQuestion()">新しい問題</button>
   </div>
+  
+  <!-- スクリプトの読み込み -->
   <script src="script.js"></script>
 </body>
 </html>
